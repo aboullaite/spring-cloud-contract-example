@@ -1,0 +1,9 @@
+bookservice:
+  ribbon:
+    eureka:
+      enabled: false
+    listOfServers: localhost:8081
+
+stubrunner:
+  idsToServiceIds:
+    spring-cloud-contract-producer: bookservice

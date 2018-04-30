@@ -1,0 +1,17 @@
+name: "should Update a book"
+request:
+  method: PUT
+  url: /api/books/123
+  body:
+    author: "Fero Hero"
+    title: "Ferok Book"
+  headers:
+    Content-Type: application/json
+response:
+  status: 200
+  body:
+    isbn: "123"
+    author: "Fero Hero"
+    title: "Ferok Book"
+  headers:
+    Content-Type: application/json;charset=UTF-8
